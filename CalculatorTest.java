@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ class CalculatorTest {
 
     @Test
     void add() {
-
+        int r = new Calculator().add(3, 3);
+        Assert.assertEquals(r, 6);
     }
 }
